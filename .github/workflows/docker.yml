@@ -20,7 +20,7 @@ jobs:
           docker build -t spiderfoot:latest .
       - name: Docker tag
         run: |
-          docker tag spiderfoot:latest spiderfoot:latest
+          docker tag spiderfoot:latest vickimgore/spiderfoot:latest
       - name: Docker push
         run: |
           docker push vickimgore/spiderfoot:latest
