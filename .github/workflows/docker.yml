@@ -17,7 +17,7 @@ jobs:
           echo $DOCKER_PASSWORD | docker login -u $DOCKER_USER --password-stdin
       - name: Docker build
         run: |
-          docker build -t spiderfoot .
+          docker build -t spiderfoot:latest .
       - name: Docker push
         run: |
-          docker push vickimgore/spiderfoot
+          docker push vickimgore/spiderfoot:latest
